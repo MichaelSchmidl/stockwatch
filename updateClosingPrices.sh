@@ -162,7 +162,7 @@ calculateCominvestValue () {
     done
     if [ $updatePrices == 1 ]; then
         if [ $checkOnly == 0 ]; then
-           printf "`date +%d.%m.%Y`,$cominvest_totalvalue,`cat $INVESTMENT_DB | tr -d '\n'`\n" >>$INVESTMENT_DB
+           printf "`date +%d.%m.%Y`,$cominvest_totalvalue,`cat $INVESTMENT_DB | tr -d '\n'`\n" >>$INVESTMENTVALUE_DB
         fi
     fi
 }
